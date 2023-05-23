@@ -3,24 +3,12 @@ package org.example;
 import java.util.ArrayList;
 
 public class CardGame {
-    private static int getSymbolValue(String symbol) {
-        if (symbol.equals("A")) {
-            return 14;
-        } else if (symbol.equals("K")) {
-            return 13;
-        } else if (symbol.equals("Q")) {
-            return 12;
-        } else if (symbol.equals("J")) {
-            return 11;
-        } else {
-            return Integer.parseInt(symbol);
-        }
-    }
+
 
     public static void main(String[] args) {
         ArrayList<Card> cards = new ArrayList<>();
 
-        String[] symbols = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+        String[] symbols = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
         String[] suits = {"\u2665", "\u2663", "\u2666", "\u2660"};
 
         for(String suit : suits) {
@@ -29,10 +17,29 @@ public class CardGame {
                 cards.add(new Card(symbol, suit, value));
             }
         }
+        getDeck(cards);
+    }
+    private static int getSymbolValue(String symbol) {
+        if (symbol.equals("Ace")) {
+            return 14;
+        } else if (symbol.equals("King")) {
+            return 13;
+        } else if (symbol.equals("Queen")) {
+            return 12;
+        } else if (symbol.equals("Jack")) {
+            return 11;
+        } else {
+            return Integer.parseInt(symbol);
+        }
+    }
 
-        // print all cards
+
+    public static void getDeck(ArrayList<Card> cards) {
         for (Card card : cards) {
             System.out.println(card);
         }
     }
+
+
+
 }

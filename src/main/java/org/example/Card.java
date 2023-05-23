@@ -12,7 +12,7 @@ public class Card {
     }
 
     public String toString() {
-        return "The " + symbol + " of " + suit + ". Value = " + value;
+        return "The " + suit + " of " + symbol + ". Value = " + value;
     }
 
 }
