@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Can now access full deck of cards.">
+    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Can now draw the first card">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/NumberShuffle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/ShuffleCards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/SuitShuffle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -62,14 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CardGame" />
+    <configuration name="Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Card" />
       <module name="snap" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Shuffle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +81,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Card" />
+    <configuration name="CardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CardGame" />
       <module name="snap" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Shuffle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,13 +152,32 @@
       <option name="project" value="LOCAL" />
       <updated>1684851253943</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Can now draw the first card">
+      <created>1684853700284</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684853700284</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set up. Written array list using for loops and getDeck and dealCard methods." />
     <MESSAGE value="updated cardgame" />
     <MESSAGE value="Can now access full deck of cards." />
-    <option name="LAST_COMMIT_MESSAGE" value="Can now access full deck of cards." />
+    <MESSAGE value="Can now draw the first card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now draw the first card" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/CardGame.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

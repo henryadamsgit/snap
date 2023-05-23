@@ -1,6 +1,10 @@
 package org.example;
 
+import org.example.Shuffle.NumberShuffle;
+import org.example.Shuffle.RandomShuffle;
+
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class CardGame {
     public static void main(String[] args) {
@@ -15,7 +19,13 @@ public class CardGame {
                 cards.add(new Card(symbol, suit, value));
             }
         }
+
+        // Cards in order
+        Collections.sort(cards, new NumberShuffle());
         getDeck(cards);
+
+
+
         System.out.println("Player is about to draw a card...");
         dealCard(cards);
     }
@@ -44,8 +54,6 @@ public class CardGame {
         Card topCard = cards.get(0);
         System.out.println("They drew a card: " + topCard);
     }
-
-
 
 
 
