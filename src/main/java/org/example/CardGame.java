@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.Shuffle.NumberShuffle;
 import org.example.Shuffle.RandomShuffle;
+import org.example.Shuffle.SuitShuffle;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,18 +11,20 @@ public class CardGame {
     public static void main(String[] args) {
         ArrayList<Card> cards = new ArrayList<>();
 
-        String[] symbols = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
-        String[] suits = {"\u2665", "\u2663", "\u2666", "\u2660"};
+        String[] symbol = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+        String[] suit = {"\u2665", "\u2663", "\u2666", "\u2660"};
 
-        for (String suit : suits) {
-            for (String symbol : symbols) {
-                int value = getSymbolValue(symbol);
-                cards.add(new Card(symbol, suit, value));
+        for (String suits : suit) {
+            for (String symbols : symbol) {
+                int value = getSymbolValue(symbols);
+                cards.add(new Card(symbols, suits, value));
             }
         }
 
         // Cards in order
         Collections.sort(cards, new NumberShuffle());
+        getDeck(cards);
+        Collections.sort(cards, new SuitShuffle());
         getDeck(cards);
 
 

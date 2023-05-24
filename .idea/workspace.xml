@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Can now draw the first card">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/NumberShuffle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/ShuffleCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/SuitShuffle.java" afterDir="false" />
+    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Added shuffle package for shuffle methods. Cards now render in number order if desired.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/SuitShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/SuitShuffle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +47,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.CardGame">
     <configuration name="Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Card" />
@@ -68,8 +64,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Card" />
+    <configuration name="CardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CardGame" />
       <module name="snap" />
       <extension name="coverage">
         <pattern>
@@ -81,10 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="org.example.CardGame" />
+    <configuration name="Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Card" />
       <module name="snap" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +107,6 @@
       <list>
         <item itemvalue="Application.CardGame" />
         <item itemvalue="Application.Card" />
-        <item itemvalue="Application.org.example.Card" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684853700284</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added shuffle package for shuffle methods. Cards now render in number order if desired.">
+      <created>1684857428117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684857428117</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,17 +169,7 @@
     <MESSAGE value="updated cardgame" />
     <MESSAGE value="Can now access full deck of cards." />
     <MESSAGE value="Can now draw the first card" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can now draw the first card" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/CardGame.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added shuffle package for shuffle methods. Cards now render in number order if desired." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added shuffle package for shuffle methods. Cards now render in number order if desired." />
   </component>
 </project>
