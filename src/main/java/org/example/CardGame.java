@@ -21,13 +21,17 @@ public class CardGame {
             }
         }
 
-        // Cards in order
+        // Randomly shuffle the cards
+        Collections.shuffle(cards);
+        getDeck(cards);
+
+        // Cards by Number
         Collections.sort(cards, new NumberShuffle());
-        getDeck(cards);
+
+        //Cards by Suit
         Collections.sort(cards, new SuitShuffle());
+
         getDeck(cards);
-
-
 
         System.out.println("Player is about to draw a card...");
         dealCard(cards);
@@ -57,7 +61,4 @@ public class CardGame {
         Card topCard = cards.get(0);
         System.out.println("They drew a card: " + topCard);
     }
-
-
-
 }

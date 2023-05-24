@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Added shuffle package for shuffle methods. Cards now render in number order if desired.">
+    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Can now shuffle cards by suit as well as by value">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/SuitShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/SuitShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/ShuffleCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/ShuffleCards.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684857428117</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Can now shuffle cards by suit as well as by value">
+      <created>1684934695214</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684934695214</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,6 +178,7 @@
     <MESSAGE value="Can now access full deck of cards." />
     <MESSAGE value="Can now draw the first card" />
     <MESSAGE value="Added shuffle package for shuffle methods. Cards now render in number order if desired." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added shuffle package for shuffle methods. Cards now render in number order if desired." />
+    <MESSAGE value="Can now shuffle cards by suit as well as by value" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now shuffle cards by suit as well as by value" />
   </component>
 </project>
