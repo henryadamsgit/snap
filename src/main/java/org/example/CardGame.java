@@ -20,10 +20,12 @@ public class CardGame {
                 cards.add(new Card(symbols, suits, value));
             }
         }
+        // Randomly Shuffled
+        Card[] shuffledCards = RandomShuffle.getRandom(cards);
 
-        // Randomly shuffle the cards
-        Collections.shuffle(cards);
-        getDeck(cards);
+
+
+
 
         // Cards by Number
         Collections.sort(cards, new NumberShuffle());
@@ -31,10 +33,12 @@ public class CardGame {
         //Cards by Suit
         Collections.sort(cards, new SuitShuffle());
 
-        getDeck(cards);
+        // Get random TopCard
 
-        System.out.println("Player is about to draw a card...");
-        dealCard(cards);
+
+        Snap snapGame = new Snap(cards);
+        snapGame.playGame();
+
     }
 
     private static int getSymbolValue(String symbol) {
@@ -57,8 +61,7 @@ public class CardGame {
         }
     }
 
-    private static void dealCard(ArrayList<Card> cards) {
-        Card topCard = cards.get(0);
-        System.out.println("They drew a card: " + topCard);
+    public void dealCard(Card[] shuffledCards) {
+        Card topCard = shuffledCards[0];
     }
 }

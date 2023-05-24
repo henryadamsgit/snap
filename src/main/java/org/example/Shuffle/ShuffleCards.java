@@ -1,7 +1,5 @@
 package org.example.Shuffle;
 
-public enum ShuffleCards {
-    shuffleNumber, shuffleSuit, shuffleRandom;
-}
+public interface ShuffleCards {
 
-//MAKE THIS AN INTERFACE?
+}

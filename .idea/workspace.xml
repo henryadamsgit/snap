@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Can now shuffle cards by suit as well as by value">
+    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="All shuffles completed, number, suit, random.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" afterDir="false" />
@@ -19,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -169,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684934695214</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All shuffles completed, number, suit, random.">
+      <created>1684936757076</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684936757076</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,6 +188,7 @@
     <MESSAGE value="Can now draw the first card" />
     <MESSAGE value="Added shuffle package for shuffle methods. Cards now render in number order if desired." />
     <MESSAGE value="Can now shuffle cards by suit as well as by value" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can now shuffle cards by suit as well as by value" />
+    <MESSAGE value="All shuffles completed, number, suit, random." />
+    <option name="LAST_COMMIT_MESSAGE" value="All shuffles completed, number, suit, random." />
   </component>
 </project>
