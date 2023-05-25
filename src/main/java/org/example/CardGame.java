@@ -5,7 +5,7 @@ import org.example.Shuffle.RandomShuffle;
 import org.example.Shuffle.SuitShuffle;
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 
 public class CardGame {
     public static void main(String[] args) {
@@ -20,24 +20,24 @@ public class CardGame {
                 cards.add(new Card(symbols, suits, value));
             }
         }
+
         // Randomly Shuffled
-        Card[] shuffledCards = RandomShuffle.getRandom(cards);
+        ArrayList<Card> shuffledCards = RandomShuffle.getRandom(cards);
 
-
-
+        Snap snapGame = new Snap(shuffledCards);
+        snapGame.playGame();
 
 
         // Cards by Number
-        Collections.sort(cards, new NumberShuffle());
-
-        //Cards by Suit
-        Collections.sort(cards, new SuitShuffle());
+//        Collections.sort(cards, new NumberShuffle());
+//
+//        //Cards by Suit
+//        Collections.sort(cards, new SuitShuffle());
 
         // Get random TopCard
 
 
-        Snap snapGame = new Snap(cards);
-        snapGame.playGame();
+
 
     }
 
@@ -63,5 +63,7 @@ public class CardGame {
 
     public void dealCard(Card[] shuffledCards) {
         Card topCard = shuffledCards[0];
+
     }
+
 }

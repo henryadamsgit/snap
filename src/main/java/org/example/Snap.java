@@ -13,6 +13,7 @@ public class Snap extends CardGame {
     }
 
     private boolean checkSnap(){
+
         int numberOfCards = cards.size();
         if (numberOfCards >= 2) {
             Card previousCard = cards.get(numberOfCards -2);
@@ -24,13 +25,14 @@ public class Snap extends CardGame {
 
 
     public void playGame() {
+        CardGame CardGame = new CardGame();
         System.out.println("Welcome to SNAP! Please press enter to start...");
         Scanner userInput = new Scanner(System.in);
-        String startGame = userInput.nextLine();
+        userInput.nextLine();
 
         while (checkSnap()) {
             Card topCard = cards.remove(0);
-            System.out.println("They drew a card: " + topCard);
+            System.out.println("You drew a card: " + topCard);
             System.out.println("Press enter for another card...");
             userInput.nextLine();
         }

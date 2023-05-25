@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="All shuffles completed, number, suit, random.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
+    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Created new Snap class. Implements method for playing the game.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/RandomShuffle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/ShuffleCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Shuffle/ShuffleCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684936757076</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Created new Snap class. Implements method for playing the game.">
+      <created>1684943991796</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684943991796</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,6 +196,7 @@
     <MESSAGE value="Added shuffle package for shuffle methods. Cards now render in number order if desired." />
     <MESSAGE value="Can now shuffle cards by suit as well as by value" />
     <MESSAGE value="All shuffles completed, number, suit, random." />
-    <option name="LAST_COMMIT_MESSAGE" value="All shuffles completed, number, suit, random." />
+    <MESSAGE value="Created new Snap class. Implements method for playing the game." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new Snap class. Implements method for playing the game." />
   </component>
 </project>
