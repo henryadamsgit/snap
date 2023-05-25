@@ -24,7 +24,7 @@ public class Card {
     }
 
     public String toString() {
-        return "The " + suit + " of " + symbol + ". Value = " + value;
+        return "The " + symbol + " of " + suit + ". Value = " + value;
     }
 
 }

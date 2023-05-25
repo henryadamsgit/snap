@@ -1,7 +1,5 @@
 package org.example;
 
-import org.example.Shuffle.ShuffleCards;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,37 +10,33 @@ public class Snap extends CardGame {
         this.cards = cards;
     }
 
-    private boolean checkSnap(){
-
-        int numberOfCards = cards.size();
-        if (numberOfCards >= 2) {
-            Card previousCard = cards.get(numberOfCards -2);
-            Card currentCard = cards.get(numberOfCards -1);
-            return previousCard.getSymbol().equals(currentCard.getSymbol());
-        }
-        return false;
-    }
-
-
     public void playGame() {
-        CardGame CardGame = new CardGame();
+        boolean hasWon = false;
+        Card previousCard = null;
+
         System.out.println("Welcome to SNAP! Please press enter to start...");
         Scanner userInput = new Scanner(System.in);
         userInput.nextLine();
 
-        while (checkSnap()) {
-            Card topCard = cards.remove(0);
-            System.out.println("You drew a card: " + topCard);
+        while (!hasWon && cards.size() > 0) {
+            Card currentCard = cards.remove(0);
+            System.out.println("You drew a card: " + currentCard);
+
+            if (previousCard != null && previousCard.getSymbol().equals(currentCard.getSymbol())) {
+                hasWon = true;
+                System.out.println("SNAP! YOU WIN!");
+                break;
+            }
+
+            previousCard = currentCard;
+
             System.out.println("Press enter for another card...");
             userInput.nextLine();
         }
-        System.out.println("SNAP! You win!");
+
+        if (!hasWon) {
+            System.out.println("YOU RAN OUT OF CARDS TO MATCH! GAME OVER");
+
+        }
     }
-
-
-
-
-
-
-
 }

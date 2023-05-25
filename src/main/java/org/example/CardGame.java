@@ -3,9 +3,7 @@ package org.example;
 import org.example.Shuffle.NumberShuffle;
 import org.example.Shuffle.RandomShuffle;
 import org.example.Shuffle.SuitShuffle;
-
 import java.util.ArrayList;
-
 
 public class CardGame {
     public static void main(String[] args) {
@@ -17,9 +15,10 @@ public class CardGame {
         for (String suits : suit) {
             for (String symbols : symbol) {
                 int value = getSymbolValue(symbols);
-                cards.add(new Card(symbols, suits, value));
+                cards.add(new Card(suits, symbols, value));
             }
         }
+
 
         // Randomly Shuffled
         ArrayList<Card> shuffledCards = RandomShuffle.getRandom(cards);
@@ -34,7 +33,6 @@ public class CardGame {
 //        //Cards by Suit
 //        Collections.sort(cards, new SuitShuffle());
 
-        // Get random TopCard
 
 
 
