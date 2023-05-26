@@ -70,7 +70,7 @@ public class Snap extends CardGame {
 
             System.out.println("Would you like to play again? Enter 'yes' to restart or enter 'quit' to exit.");
             String restartInput = userInput.nextLine();
-            playAgain = restartInput.isEmpty() || restartInput.equals("yes");
+            playAgain = restartInput.equals("yes");
             if (!playAgain) {
                 System.out.println("Thank you for playing SNAP!");
             }
