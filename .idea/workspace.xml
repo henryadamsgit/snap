@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Snap game playable by 2 users.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Changed messages and ends game in all outcomes. Ran out of time/ incorrect input / run out of cards">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685093771155</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed messages and ends game in all outcomes. Ran out of time/ incorrect input / run out of cards">
+      <created>1685107358791</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685107358791</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -223,6 +229,7 @@
     <MESSAGE value="Enter from user now returns a shuffled card" />
     <MESSAGE value="Completed snap for single user" />
     <MESSAGE value="Snap game playable by 2 users." />
-    <option name="LAST_COMMIT_MESSAGE" value="Snap game playable by 2 users." />
+    <MESSAGE value="Changed messages and ends game in all outcomes. Ran out of time/ incorrect input / run out of cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed messages and ends game in all outcomes. Ran out of time/ incorrect input / run out of cards" />
   </component>
 </project>
