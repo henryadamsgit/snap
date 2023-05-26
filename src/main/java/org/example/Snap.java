@@ -31,29 +31,30 @@ public class Snap extends CardGame {
                 System.out.println("Player " + (isPlayer1Turn ? "1" : "2") + " drew a card: " + currentCard);
 
                 if (previousCard != null && previousCard.getSymbol().equals(currentCard.getSymbol())) {
-                    System.out.println("THERE'S A MATCH! Player " + (isPlayer1Turn ? "1" : "2") + ", type 'snap' ASAP!");
+                    System.out.println("THERE'S A MATCH! Player " + (isPlayer1Turn ? "1" : "2") + ", type 'snap' quick!");
 
                     Timer timer = new Timer();
                     TimerTask task = new TimerTask() {
                         @Override
                         public void run() {
-                            System.out.println("Time's up! Player " + (isPlayer1Turn ? "1" : "2") + " didn't say 'snap' in time.");
-                            hasWon[0] = true; // Force the game to end
+                            System.out.println("Time's up! Player " + (isPlayer1Turn ? "1" : "2") + " didn't SNAP in time.");
+                            hasWon[0] = true;
                         }
                     };
 
                     // Timer duration (3 seconds)
                     timer.schedule(task, 3000);
-
                     String snapInput = userInput.nextLine();
                     timer.cancel();
 
-                    if (snapInput.equalsIgnoreCase("snap")) {
-                        System.out.println("SNAP! Player " + (isPlayer1Turn ? "1" : "2") + " WINS!");
+
+
+                    if (snapInput.equals("snap")) {
+                        System.out.println("SUCCESSFUL SNAP! Player " + (isPlayer1Turn ? "1" : "2") + " WINS!");
                         hasWon[0] = true;
                         break;
                     } else {
-                        System.out.println("Incorrect input. Player " + (isPlayer1Turn ? "1" : "2") + " loses the round.");
+                        System.out.println("Incorrect input. Player " + (isPlayer1Turn ? "1" : "2") + " LOSES!");
                     }
                 }
 
