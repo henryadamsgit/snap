@@ -10,11 +10,6 @@ public class Card {
         this.symbol = symbol;
         this.value = value;
     }
-
-    public String getSuit() {
-        return suit;
-    }
-
     public String getSymbol() {
         return symbol;
     }

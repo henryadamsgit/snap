@@ -48,7 +48,6 @@ public class Snap extends CardGame {
                     timer.cancel();
 
 
-
                     if (snapInput.equals("snap")) {
                         System.out.println("SUCCESSFUL SNAP! Player " + (isPlayer1Turn ? "1" : "2") + " WINS!");
                         hasWon[0] = true;
@@ -71,7 +70,7 @@ public class Snap extends CardGame {
 
             System.out.println("Would you like to play again? Enter 'yes' to restart or enter 'quit' to exit.");
             String restartInput = userInput.nextLine();
-            playAgain = restartInput.isEmpty() || restartInput.equalsIgnoreCase("yes");
+            playAgain = restartInput.isEmpty() || restartInput.equals("yes");
             if (!playAgain) {
                 System.out.println("Thank you for playing SNAP!");
             }

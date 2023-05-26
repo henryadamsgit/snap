@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Added functionality to play again or quit when game ends.">
+    <list default="true" id="34728639-b5ea-46f9-ba0a-2c1efb11e8c5" name="Changes" comment="Changed output messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685107712257</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Changed output messages">
+      <created>1685110540443</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685110540443</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,6 +245,7 @@
     <MESSAGE value="Snap game playable by 2 users." />
     <MESSAGE value="Changed messages and ends game in all outcomes. Ran out of time/ incorrect input / run out of cards" />
     <MESSAGE value="Added functionality to play again or quit when game ends." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to play again or quit when game ends." />
+    <MESSAGE value="Changed output messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed output messages" />
   </component>
 </project>

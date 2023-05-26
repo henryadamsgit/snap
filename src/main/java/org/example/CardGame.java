@@ -45,12 +45,14 @@ public class CardGame {
         }
     }
 
+    // Get Full Deck In Order
     private static void getDeck(ArrayList<Card> cards) {
         for (Card card : cards) {
             System.out.println(card);
         }
     }
 
+    // Get Top Card
     public void dealCard(Card[] shuffledCards) {
         Card topCard = shuffledCards[0];
     }
