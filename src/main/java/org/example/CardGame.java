@@ -1,8 +1,8 @@
 package org.example;
 
 import org.example.Shuffle.NumberShuffle;
-import org.example.Shuffle.RandomShuffle;
 import org.example.Shuffle.SuitShuffle;
+import org.example.Shuffle.RandomShuffle;
 import java.util.ArrayList;
 
 public class CardGame {
@@ -18,25 +18,17 @@ public class CardGame {
                 cards.add(new Card(suits, symbols, value));
             }
         }
+        // Cards by Number
+//      Collections.sort(cards, new NumberShuffle());
 
+        //Cards by Suit
+//      Collections.sort(cards, new SuitShuffle());
 
         // Randomly Shuffled
         ArrayList<Card> shuffledCards = RandomShuffle.getRandom(cards);
 
         Snap snapGame = new Snap(shuffledCards);
         snapGame.playGame();
-
-
-        // Cards by Number
-//        Collections.sort(cards, new NumberShuffle());
-//
-//        //Cards by Suit
-//        Collections.sort(cards, new SuitShuffle());
-
-
-
-
-
     }
 
     private static int getSymbolValue(String symbol) {
@@ -61,7 +53,5 @@ public class CardGame {
 
     public void dealCard(Card[] shuffledCards) {
         Card topCard = shuffledCards[0];
-
     }
-
 }
